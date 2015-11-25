@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="SilverlightApplication1.MainPage"
+	xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400"
+	Height="600" Width="1000">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel x:Name="LayoutRoot" Background="White" Grid.Row="0" Grid.ColumnSpan="2" Loaded="LayoutRoot_Loaded">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+				<TextBlock Text="Pesquisa sales Person: "/>
+				<sdk:AutoCompleteBox x:Name="searchSalesData" Margin="0,0,0,10" FilterMode="Contains" MinimumPrefixLength="1" IsTextCompletionEnabled="False" Width="250" SelectionChanged="searchSalesData_SelectionChanged"/>
+			</StackPanel>
+			
+			<sdk:DataGrid x:Name="dgSales" AutoGenerateColumns="False" Height="200" Margin="0,0,0,0" ItemsSource="{Binding}">
+				<sdk:DataGrid.Columns>
+					<sdk:DataGridTextColumn Header="Sales Person" Binding="{Binding Path=SalesPerson}"/>
+					<sdk:DataGridTextColumn Header="Company Name" Binding="{Binding Path=CompanyName}"/>
+					<sdk:DataGridTextColumn Header="Sales Amount" Binding="{Binding Path=SalesAmount}"/>
+					<sdk:DataGridTextColumn Header="Sales Forecast" Binding="{Binding Path=SalesForecast}"/>
+				</sdk:DataGrid.Columns>
+			</sdk:DataGrid>
+			
+			<sdk:DataPager x:Name="dgSalesPager" Source="{Binding}" DisplayMode="FirstLastNumeric"/>
+			
+			<Slider x:Name="sliderPager" Cursor="Hand" Minimum="0" Value="{Binding PageIndex,ElementName=dgSalesPager, Mode=TwoWay}" Maximum="{Binding PageCount,ElementName=dgSalesPager,Mode=TwoWay}"/>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+
+				<StackPanel Orientation="Vertical" Width="300">
+					<TextBlock Text="Sales Amount"></TextBlock>
+					<Slider x:Name="sliderSalesAmount" Cursor="Hand" Minimum="10000" Maximum="10100" ValueChanged="slider_ValueChanged"/>
+					<TextBlock Text="{Binding Value,ElementName=sliderSalesAmount,Mode=OneWay}"/>
+				</StackPanel>
+
+				<StackPanel Orientation="Vertical" Width="300">
+					<TextBlock Text="Sales Forecast"/>
+					<Slider x:Name="sliderSalesForecast" Cursor="Hand" Minimum="10000" Maximum="10100" ValueChanged="slider_ValueChanged"/>
+					<TextBlock Text="{Binding Value,ElementName=sliderSalesForecast,Mode=OneWay}"/>
+				</StackPanel>
+
+			</StackPanel>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
+			<toolkit:Chart Title="Actual Sales" Height="250" Width="600">
+				<toolkit:ColumnSeries DependentValuePath="SalesAmount" IndependentValuePath="CompanyName" ItemsSource="{Binding}"/>
+				<toolkit:LineSeries DependentValuePath="SalesForecast" IndependentValuePath="CompanyName" ItemsSource="{Binding}" AnimationSequence="FirstToLast"/>
+			</toolkit:Chart>
+		</StackPanel>
+		
+		<Grid x:Name="gdWrap" Grid.Row="1" Grid.Column="1">
+			<toolkit:WrapPanel x:Name="wrapPanelSales" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400">
+			</toolkit:WrapPanel>
+		</Grid>
+	</Grid>
+</UserControl>
