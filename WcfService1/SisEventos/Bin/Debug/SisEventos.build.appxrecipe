@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ANDRE</Machine>
+    <WindowsUser>MarcosAndré</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>2400b6ca-082b-4585-9899-6e7ed472a9b9</PackageIdentityName>
+    <IntermediateOutputPath>D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Bin\Debug\SisEventos.dll">
+      <PackagePath>SisEventos.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.dll">
+      <PackagePath>Microsoft.Advertising.Mobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.dll">
+      <PackagePath>Microsoft.Advertising.Mobile.UI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.dll">
+      <PackagePath>Microsoft.Phone.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.Maps.dll">
+      <PackagePath>Microsoft.Phone.Controls.Maps.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\cs-CZ\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>cs-CZ\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\da-DK\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>da-DK\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\de-DE\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>de-DE\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\el-GR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>el-GR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\en-GB\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>en-GB\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\es-ES\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>es-ES\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\fi-FI\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>fi-FI\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\fr-FR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>fr-FR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\hu-HU\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>hu-HU\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\it-IT\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>it-IT\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\ja-JP\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>ja-JP\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\ko-KR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>ko-KR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\nb-NO\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>nb-NO\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\nl-NL\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>nl-NL\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\pl-PL\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>pl-PL\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\pt-BR\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>pt-BR\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\pt-PT\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>pt-PT\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\ru-RU\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>ru-RU\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\sv-SE\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>sv-SE\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\zh-CN\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>zh-CN\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\zh-TW\Microsoft.Advertising.Mobile.resources.dll">
+      <PackagePath>zh-TW\Microsoft.Advertising.Mobile.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.xml">
+      <PackagePath>Microsoft.Advertising.Mobile.UI.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.0\ExtensionSDKs\MSAdvertising\6.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.xml">
+      <PackagePath>Microsoft.Advertising.Mobile.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Images\add.png">
+      <PackagePath>Images\add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Images\delete.png">
+      <PackagePath>Images\delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Images\edit.png">
+      <PackagePath>Images\edit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Images\feature.search.png">
+      <PackagePath>Images\feature.search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Images\overflowdots.png">
+      <PackagePath>Images\overflowdots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Images\save.png">
+      <PackagePath>Images\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\overflowdots.png">
+      <PackagePath>overflowdots.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\ServiceReferences.ClientConfig">
+      <PackagePath>ServiceReferences.ClientConfig</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\_Git\Gerenciador de Eventos\WcfService1\SisEventos\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49962/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49962/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49962/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ContatoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoListar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoListar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoAbrir_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoAbrir" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoAbrir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoAbrirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoAdicionar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoAdicionar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoAdicionar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoAdicionarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoAtualizar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoAtualizar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoAtualizar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoAtualizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoEventos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoEventos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ContatoEventos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoEventosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoAbrir_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoAbrir" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoAbrir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoAbrirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoAdicionar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoAdicionar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoAdicionar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoAdicionarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoAtualizar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoAtualizar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoAtualizar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoAtualizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoDelete" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoConvidarParticipante_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoConvidarParticipante" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoConvidarParticipante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoConvidarParticipanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoRemoverParticipante_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventoRemoverParticipante" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EventoRemoverParticipante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EventoRemoverParticipanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteAbrir_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteAbrir" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteAbrir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteAbrirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteListar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteAceitar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteAceitar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteAceitar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteAceitarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteRecusar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteRecusar" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConviteRecusar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConviteRecusarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ContatoListar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ContatoListar" message="tns:IService1_ContatoListar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ContatoListarResponse" message="tns:IService1_ContatoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoListar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoListar" message="tns:IService1_EventoListar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoListarResponse" message="tns:IService1_EventoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContatoAbrir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ContatoAbrir" message="tns:IService1_ContatoAbrir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ContatoAbrirResponse" message="tns:IService1_ContatoAbrir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContatoAdicionar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ContatoAdicionar" message="tns:IService1_ContatoAdicionar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ContatoAdicionarResponse" message="tns:IService1_ContatoAdicionar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContatoAtualizar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ContatoAtualizar" message="tns:IService1_ContatoAtualizar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ContatoAtualizarResponse" message="tns:IService1_ContatoAtualizar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContatoEventos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ContatoEventos" message="tns:IService1_ContatoEventos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ContatoEventosResponse" message="tns:IService1_ContatoEventos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoAbrir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoAbrir" message="tns:IService1_EventoAbrir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoAbrirResponse" message="tns:IService1_EventoAbrir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoAdicionar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoAdicionar" message="tns:IService1_EventoAdicionar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoAdicionarResponse" message="tns:IService1_EventoAdicionar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoAtualizar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoAtualizar" message="tns:IService1_EventoAtualizar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoAtualizarResponse" message="tns:IService1_EventoAtualizar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoDelete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoDelete" message="tns:IService1_EventoDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoDeleteResponse" message="tns:IService1_EventoDelete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoConvidarParticipante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoConvidarParticipante" message="tns:IService1_EventoConvidarParticipante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoConvidarParticipanteResponse" message="tns:IService1_EventoConvidarParticipante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventoRemoverParticipante">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EventoRemoverParticipante" message="tns:IService1_EventoRemoverParticipante_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EventoRemoverParticipanteResponse" message="tns:IService1_EventoRemoverParticipante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConviteAbrir">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConviteAbrir" message="tns:IService1_ConviteAbrir_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConviteAbrirResponse" message="tns:IService1_ConviteAbrir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConviteListar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConviteListar" message="tns:IService1_ConviteListar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConviteListarResponse" message="tns:IService1_ConviteListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConviteAceitar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConviteAceitar" message="tns:IService1_ConviteAceitar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConviteAceitarResponse" message="tns:IService1_ConviteAceitar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConviteRecusar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConviteRecusar" message="tns:IService1_ConviteRecusar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConviteRecusarResponse" message="tns:IService1_ConviteRecusar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ContatoListar">
+      <soap:operation soapAction="http://tempuri.org/IService1/ContatoListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoListar">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContatoAbrir">
+      <soap:operation soapAction="http://tempuri.org/IService1/ContatoAbrir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContatoAdicionar">
+      <soap:operation soapAction="http://tempuri.org/IService1/ContatoAdicionar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContatoAtualizar">
+      <soap:operation soapAction="http://tempuri.org/IService1/ContatoAtualizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContatoEventos">
+      <soap:operation soapAction="http://tempuri.org/IService1/ContatoEventos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoAbrir">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoAbrir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoAdicionar">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoAdicionar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoAtualizar">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoAtualizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoDelete">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoConvidarParticipante">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoConvidarParticipante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EventoRemoverParticipante">
+      <soap:operation soapAction="http://tempuri.org/IService1/EventoRemoverParticipante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConviteAbrir">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConviteAbrir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConviteListar">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConviteListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConviteAceitar">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConviteAceitar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConviteRecusar">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConviteRecusar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:49962/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
